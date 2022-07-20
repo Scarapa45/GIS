@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title>Temperature Converter</title>
+<body>
+
+<h1>Temperature Converter</h1>
+<p>Type a value in either field to convert the Temperature :</p>
+
+<p><input id="f" onkeyup="convert('F')"> degrees Fahrenheit</p>
+<p><input id="c" onkeyup="convert('C')"> degrees Celsius</p>
+
+
+
+<style>
+body {background-color: powderblue;}
+
+</style>
+<script>
+function convert(degree) {
+    var x;
+    if (degree == "C") {
+        x = document.getElementById("c").value * 9 / 5 + 32;
+        document.getElementById("f").value = Math.round(x);
+    } else {
+        x = (document.getElementById("f").value -32) * 5 / 9;
+        document.getElementById("c").value = Math.round(x);
+    }
+}
+</script>
+</body>
+<html>
