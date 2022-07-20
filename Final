@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+   <link rel="stylesheet" href="finalcss.css">
+   <script src="finaljs.js"></script>
+   
+  <title>Gannett Peak Avalanche Safety</title>
+  
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body style=background-color:#336699> 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://en.wikipedia.org/wiki/Gannett_Peak" target="_blank">About</a>
+  <a href="https://www.summitpost.org/gannett-peak/150362" target="_blank">Routes</a>
+  <a href="http://jhavalanche.org/" target="_blank">Avalanche Information</a>
+  <a href="https://www.fs.usda.gov/detail/shoshone/about-forest/districts/?cid=stelprdb5191039" target="_blank">US Forest Service Information</a>
+</div>
+
+<h1 style=font:impact;color:white;>Gannett Peak, WY Avalanche Prone Areas</h1>
+<p style=color:white;background-color:>By Andrew Frederick </p>
+
+<span style="font-size:30px;cursor:pointer;color:#F8F8F8;" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+  
+  
+</head>
+<body>
+<p style=color:#F5F5F5;>Introduction:<br><br>
+Gannett Peak is located within the Wind River Range of Wyoming and sits at 13,809’. This mountain is not the tallest mountain in the region, but it has its own set of challenges due to its distance from any roads. 
+The issue when people attempt Gannett, is that if any avalanches happen, help will not come until it is too late. 
+More and more people are climbing it and beginning to attempt it during periods of avalanche risk. Yet, there is little information out there on which slopes are the most avalanche prone on the most popular route. My project aims to add clarification to route risk and exposure to avalanches on Gannett Peak.
+
+<br><br>Background:<br><br>
+The most popular route is the Titcomb Basin trail, starting 11 miles from Pinedale, WY, south of Gannett Peak. 
+The second most popular route, Glacier Trail, starts near Dubois, Wyoming northwest of Gannett Peak. 
+Unlike Colorado 14ers, and the mountains near Jackson Hole, there are no avalanche forecasts for the area around Gannett Peak. 
+Since the closest maintained road during the summer is over 20 miles away, it is imperative that people have proper knowledge of the routes that are prone to avalanche danger. 
+Gannett is a mountain that is not well documented like other peaks for routes and climbing, so it is imperative to shed some light on possible risks in attempting this mountain during winter or shoulder seasons. 
+
+<br><br>Methods:<br><br>
+First, I had to gather slope data for the area and create a map application that was simple for people to understand and not just people who have extensive knowledge with avalanches. I made it so that the color “red” indicated avalanche risk >30°. 
+Since either of the two popular routes used are no greater than 55° I left that out, as avalanche risk is lessened after this angle.
+The next step was to gather gpx data on the two routes that are the most popular. There are no sources available from National Forest Service websites, so I had to search through various trip reports to find a publicly available gpx file uploaded by a private individual for the Titcomb Basin Trail.
+ Fortunately for the Glacier trail route, I had my own gps data that I could upload from my own device from a trip I took in 2015. 
+I added this into Arc Online and created a web application that had both gps routes, as well as an avalanche prone slope layer. There is a feature that enables the user to create elevation profile to further help with trip planning. The web application was imbedded into a website that added links to aid in trip planning. The web application wouldn’t have full potential if the information sources were easily within the drop-down menu.
+ I included the Bridger-Teton Avalanche Center that provides forecasts for upper regions of the Wind River Range that can be used as an aid, but not a full source of forecasting for the Gannett Peak area. 
+
+<br><br>Results: <br><br>
+What I found was that the more popular route, Titcomb basin crossed over much more avalanche terrain near the peak.
+ While, the Glacier trail had significantly less exposure to slopes greater than 30°. It also had a section towards the beginning of the trail that posed avalanche danger which people would probably not have noticed with trip planning. 
+ Climbers tend to not turn on avalanche beacons and be on the lookout for avalanches early on in trips than when they aren’t near the summit, so this is useful information with trip planning. 
+
+<br><br>Conclusion:<br><br>
+
+Since there is not a lot of information and updated trip reports for Gannett Peak, I felt that it was important to utilize my knowledge of avalanche terrain and apply them. With the rise in “peak baggers,” more and more amateur climbers are putting themselves into avalanche terrain every year and the only way to help mitigate accidents is to put as much knowledge out there and hope people make the correct decision. 
+<br><br>
+</p>
+</body>
+<style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 50%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style>
+<div class="embed-container"><iframe width="250" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Gannett Peak, WY Slope Angle" src="http://uwyo.maps.arcgis.com/apps/Profile/index.html?appid=0cf92a883e934eaf92128441b27d0128"></iframe></div>
+
+
+</html>
